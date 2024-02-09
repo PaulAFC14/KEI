@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KEI</title>
-    <link rel="stylesheet" href="css/copy.css">
+    <link rel="stylesheet" href="css/computer.css">
+    <link rel="stylesheet" href="css/phone.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +14,13 @@
 
 </head>
 <body>
+    <script>
+        function toggleMenu() {
+            var menuList = document.getElementById("menuList");
+            menuList.classList.toggle("active");
+        }
+    </script>
+
     <header>
         <div class="topbox">
             <div class="inline-block top-left">
@@ -40,28 +48,29 @@
                 </ul>
             </div>
         </div>
-        <nav>
-            <ul>
-                <li class="inline">
-                    <a class="branch" href="#">KEI</a>
-                </li>
-                <li class="inline">
-                    <a class="option selected" href="#">Inicio</a>
-                </li>
-                <li class="inline">
-                    <a class="option" href="#">Servicios</a>
-                </li>
-                <li class="inline">
-                    <a class="option" href="#">Nuestros proyectos</a>
-                </li>
-                <li class="inline">
-                    <a class="option" href="#">Acerca de</a>
-                </li>
-                <li class="inline">
-                    <a class="option" href="#">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="navbar">
+            <div class="nav-left">
+                <img src="assets/icons/menu.png" class="menu-icon" onclick="toggleMenu()">
+                <a class="branch" href="#">KEI</a>
+            </div>
+            <div class="nav-right">
+                <a href="#">
+                    <div class="option inline-block selected">Inicio</div>
+                </a>
+                <a href="#">
+                    <div class="option inline-block">Servicios</div>
+                </a>
+                <a href="#">
+                    <div class="option inline-block">Nuestros proyectos</div>
+                </a>
+                <a href="#">
+                    <div class="option inline-block">Acerca de</div>
+                </a>
+                <a href="#">
+                    <div class="option inline-block">Contacto</div>
+                </a>
+            </div>
+        </div>
     </header>
     <section class="centered">     
         <div class="banner">
@@ -75,15 +84,16 @@
         </div>   
     </section>
 
-    <section class="centered">
+    <section class="centered padding">
         <div class="content">
             <p class="mayus">NUESTROS SERVICIOS</p>  
             <p class="tittle">Te proveemos de soluciones tecnológicas empresariales</p> 
+            <br>
             <p class="">Realizamos soluciones a la medida de tu organización, empresa o proyecto. Si necesitas una aplicación móvil, sitio web, aplicación web, sistema integral, entre otros, podemos ayudarte.</p>
             </div>
     </section>
 
-    <section class="centered">
+    <section class="centered padding">
         <div class="grid-container">
             <a href="">
                 <div class="grid-item">
@@ -92,7 +102,7 @@
                         <p class="desc2">Alicaciones móviles</p>
                     </div>
                     <div class="card-bottom">
-                        <p class="desc">Desarrollo de aplicaciones móviles para tu negocio o proyecto</p>
+                        <p class="desc no-mobile">Desarrollo de aplicaciones móviles para tu negocio o proyecto</p>
                     </div>
                 </div>
             </a>
@@ -103,7 +113,7 @@
                         <p class="desc2">Sistemas administrativos</p>
                     </div>
                     <div class="card-bottom">
-                        <p class="desc">Diseño de sistemas para la gestión de tu organización</p>
+                        <p class="desc no-mobile">Diseño de sistemas para la gestión de tu organización</p>
                     </div>
                 </div>
             </a>
@@ -114,7 +124,7 @@
                         <p class="desc2">Sistemas de ecommerce</p>
                     </div>
                     <div class="card-bottom">
-                        <p class="desc">Montamos tu negocio online para expandir tus fronteras</p>
+                        <p class="desc no-mobile">Montamos tu negocio online para expandir tus fronteras</p>
                     </div>
                 </div>
             </a>
@@ -125,26 +135,22 @@
                         <p class="desc2">Aplicaciones y sitios web</p>
                     </div>
                     <div class="card-bottom">
-                        <p class="desc">Diseño y desarrollo de sitios y aplicaciones web</p>
+                        <p class="desc no-mobile">Diseño y desarrollo de sitios y aplicaciones web</p>
                     </div>
                 </div>
             </a>
         </div>
     </section>
-    <br><br><br>
-    
 
-    <section class="centered">
+    <section class="centered-onweb padding">
         <div class="textcard">
-            <img src="assets/icons/award.png" class="icon3 inline">
-            <p class="inline desc2">Nuestra misión</p>
-            <br><br>
+            <img src="assets/icons/award.png" class="icon4 inline-onweb">
+            <p class="inline-onweb desc2">Nuestra misión</p>
             <p class="desc">En KEI, nos dedicamos a crear soluciones de software excepcionales que satisfacen las necesidades únicas de nuestros clientes. Nuestra misión es impulsar su éxito a través de la innovación, la calidad y el compromiso con la excelencia.</p>
         </div>
         <div class="textcard">
-            <img src="assets/icons/eye.png" class="icon3 inline">
-            <p class="inline desc2">Nuestra visión</p>
-            <br><br>
+            <img src="assets/icons/eye.png" class="icon4 inline-onweb">
+            <p class="inline-onweb desc2">Nuestra visión</p>
             <p class="desc">Nos esforzamos por ser líderes reconocidos en el desarrollo de software, destacándonos por nuestra capacidad para ofrecer soluciones innovadoras y transformadoras que impulsen el progreso empresarial y la satisfacción del cliente.</p>
         </div>
         <div class="picture">
@@ -152,7 +158,143 @@
             <div></div>
         </div>
     </section>
+
+    <section class="centered padding">
+        <div class="content">
+            <p class="mayus">TECNOLOGÍAS</p>  
+            <p class="tittle">Tecnologías utilizadas en nuestras soluciones</p> 
+            <br>
+            <p class="">Utilizamos tecnologías novedosas y seguras, lo que permite a nuestros clientes a tener tranquilidad y seguridad sobre las soluciones implementadas.</p>
+            </div>
+    </section>
+
     
-    <br><br><br>
+
+    <section class="centered padding">
+        <div class="grid-container2">
+            <a href="">
+                <div class="grid-item2">
+                    <div class="card-top">
+                        <img src="assets/icons/laravel.png" class="tech">
+                    </div>
+                    <div class="card-bottom no-mobile">
+                        <p class="desc2">Laravel</p>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="grid-item2">
+                    <div class="card-top">
+                        <img src="assets/icons/react.png" class="tech">
+                    </div>
+                    <div class="card-bottom no-mobile">
+                        <p class="desc2">React</p>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="grid-item2">
+                    <div class="card-top">
+                        <img src="assets/icons/flutter.png" class="tech">
+                    </div>
+                    <div class="card-bottom no-mobile">
+                        <p class="desc2">Flutter</p>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="grid-item2">
+                    <div class="card-top">
+                        <img src="assets/icons/swift.png" class="tech">
+                    </div>
+                    <div class="card-bottom no-mobile">
+                        <p class="desc2">Swift</p>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="grid-item2">
+                    <div class="card-top">
+                        <img src="assets/icons/android.png" class="tech">
+                    </div>
+                    <div class="card-bottom no-mobile">
+                        <p class="desc2">Android</p>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="foot">
+            <div class="triangle1"></div>
+            <div class="triangle2"></div>
+            <div class="foot-content">
+                <div class="grid">
+                    <div class="form">
+                        <section class="centered">
+                            <div class="content">
+                                <form action="">
+                                    <p class="tittle">Contáctenos</p> 
+                                    <p class="desc">No dude en escribirnos, le ayudaremos con su proyecto.</p>
+                                    <input type="text" class="rounded-input" placeholder="Nombre*">
+                                    <input type="text" class="rounded-input" placeholder="Email*">
+                                    <input type="text" class="rounded-input" placeholder="Teléfono">
+                                    <textarea name="" id="" cols="1" rows="5" placeholder="Escriba aquí lo que necesite"></textarea>
+                                </form>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="contact">
+                        <div class="ct-row">
+                            <div class="card-icon"> 
+                                <img src="assets/icons/buildings.png" class="icon5 centered">
+                            </div>
+                            <div class="info">
+                                <p class="white-tittle">NUESTRA OFICINA</p>
+                                <div class="info-desc">
+                                    <p class="white-desc">La Paz, 23000</p> 
+                                    <p class="white-desc">Baja California Sur</p> 
+                                </div>
+                                 
+                            </div>
+                        </div>
+
+                        <div class="ct-row">
+                            <div class="card-icon"> 
+                                <img src="assets/icons/call.png" class="icon5 centered">
+                            </div>
+                            <div class="info">
+                                <p class="white-tittle">TELÉFONO</p>
+                                <div class="info-desc">
+                                    <p class="white-desc">Tel: 612 123 4567</p> 
+                                    <p class="white-desc">Wp: 612 123 4567</p>
+                                </div>
+                                 
+                            </div>
+                        </div>
+
+                        <div class="ct-row">
+                            <div class="card-icon"> 
+                                <img src="assets/icons/directbox-notif.png" class="icon5 centered">
+                            </div>
+                            <div class="info">
+                                <p class="white-tittle">EMAIL</p>
+                                <div class="info-desc">
+                                    <p class="white-desc">info@kei.com</p> 
+                                    <p class="white-desc">contacto@kei.com</p> 
+                                </div>
+                                 
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <p class="white-desc centered up">Copyright © 2024. Designed by kei.com</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

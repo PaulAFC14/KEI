@@ -1,0 +1,456 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: #191919;
+    text-decoration: none !important;
+    font-family: 'Jost', sans-serif;
+}
+
+@media (max-width: 949px){
+    *{
+        font-size: 5vw;
+    }
+
+    .no-mobile{
+        display: none;
+    }
+
+    .inline-onmobile{
+        display: inline !important;
+    }
+
+    .topbox {
+        display: none;
+    }
+
+    header{
+        margin: -20px 0;
+        padding: 0;
+    }
+
+    .navbar{
+        margin: 20px 0;
+        padding: 0 !important;
+        height: 15vw;
+        position: relative;
+    }
+
+    .nav-left{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-right{
+        display: none;
+        width: 80%;
+        height: 100%;
+        right: 0;
+        align-items: center;
+    }
+
+
+    .menu-icon{
+        width: 9vw;
+        height: 9vw;
+        position: absolute;
+        left: 0;
+        margin-left: 5vw;
+    }
+    
+    .branch{
+        font-size: 6.25vw;
+        font-weight: bold;
+        position: absolute;
+        text-align: center;
+
+        width: 100%;
+    }
+    
+    .option{
+        
+        margin-right: 25px;
+        padding: 5px 15px;
+    }
+
+    .option:hover{
+        background-color: #EBEBF0;
+        border-radius: 6px;
+    }
+
+    .selected{
+        font-weight: normal;
+    }
+
+    .centered{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .padding{
+        padding: 0 5vw;
+    }
+
+    .content{
+        width: 900px;
+        text-align: center;
+    }
+
+    .content2{
+        width: 294px;
+        text-align: center;
+    }
+
+
+
+
+
+    .banner{
+        width: 90vw;
+        height: 157.5vw;
+        margin: 10vw 5vw 10vw 5vw;
+        background-color: #EBEBF0;
+        overflow: hidden;
+        position: relative;
+        border-radius: 12px;
+    }
+    
+    .banner img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 12px;
+    }
+    
+    .banner div{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        background-color: #1e1e2385;
+        padding: 5vw;
+        text-align: center;
+    }
+    
+    .banner-title{
+        font-size: 7.5vw;
+        font-weight: normal;
+        color: #fff;
+    }
+    
+    .banner-desc{
+        color: #fff;
+        font-weight: lighter;
+    }
+
+
+    .mayus{
+        color: #9B9BA0;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+
+    .tittle{
+        font-size: 6.25;
+        font-weight: normal;
+    }
+
+    .desc2{
+        font-size: 5vw;
+        font-weight: normal;
+        margin-top: 25px;
+    }
+
+    .grid-container {
+        width: 90vw;
+        display: grid;
+        grid-template-columns: repeat(2, 42.5vw);
+        grid-gap: 5vw;
+        margin-top: 5vw;
+        margin-bottom: 10vw;
+    }
+    
+    .grid-item {
+        width: 42.5vw;
+        height: 53.125vw;
+        border-radius: 12px;
+        border: 2.5px solid #D7D7DC;
+        text-align: center;
+        padding: 5vw;
+    }
+
+    .grid-item:hover{
+        border: 2.5px solid #46464B;
+    }
+
+    .icon3{
+        width: 14vw !important;
+        height: 14vw !important;
+    }
+
+    .icon4{
+        width: 7vw !important;
+        height: 7vw !important;
+        margin-bottom: 0 !important;
+    }
+
+    .card-top{
+        width: 100%;
+        height: 70%;
+    }
+
+    .card-bottom{
+        width: 100%;
+        height: 30%;
+        position: relative;
+    }
+
+    .card-bottom .desc{
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .textcard{
+        width: 90vw;
+        text-align: center;
+    }
+
+    .textcard .desc{
+        margin-top: 5vw;
+    }
+
+    .textcard .desc2{
+        margin-top: 0;
+    }
+
+    .icon3{
+        width: 5.8vw;
+        height: 5.8vw;
+        margin-right: 0;
+    }
+
+    .picture{
+        width: 90vw;
+        height: 45vw;
+        background-color: #EBEBF0;
+        border-radius: 12px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 10vw;
+    }
+
+    .picture img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 12px;
+    }
+
+    .picture div{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        background-color: #1e1e2385;
+        padding: 25px;
+        text-align: center;
+    }
+
+    .grid-container2 {
+        width: 90vw;
+        display: grid;
+        grid-template-columns: repeat(3, 26vw);
+        grid-gap: 6vw;
+        margin-top: 2.5vw;
+    }
+    
+    .grid-item2 {
+        width: 26vw;
+        height: 15vw;
+        border-radius: 12px;
+        border: 2.5px solid #D7D7DC;
+        text-align: center;
+        padding: 3vw;
+    }
+
+    .tech{
+        width: 8vw;
+        height: 8vw;
+        margin-right: 0;
+    }
+
+    footer{
+        width: 100%;
+        margin-top: 10vw;
+        position: relative;
+        background-color: green;
+    }
+
+    .foot{
+        width: 100%;
+        height: 300vw;
+        background-color: #23232D;
+        position: relative;
+    }
+
+    .triangle1{
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 0;
+        right: 0;
+        background-color: transparent;
+        border-left: 60vw solid transparent;
+        border-right: 0px solid transparent;
+        border-bottom: 300vw solid #282832; 
+    }
+
+    .triangle2{
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        border-left: 0px solid transparent;
+        border-right: 90vw solid transparent;
+        border-bottom: 300vw solid #2D2D37; 
+    }
+
+
+    .foot-content{
+        width: 90vw;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        padding: 10vw 0;
+    }
+
+    .grid{
+        width: 100%;
+        height: 100%;
+    }
+
+    .form{
+        width: 90vw;
+        height: 117.5vw;
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 28px;
+        margin-bottom: 7.5vw;
+    }
+
+    .contact{
+        width: 90vw;
+        height: 42vw;
+    }
+
+    .rounded-input{
+        width: 100%;
+        background-color: #EBEBF0;
+        color: #646469;
+        border: none;
+        padding: 1.5vw 4.5vw;
+        border-radius: 6px;
+        margin-bottom: 5vw;
+    }
+
+    .rounded-input:focus{
+        border: 2px solid #9B9BA0;
+        outline: none;
+    }
+
+    textarea {
+        width: 100%;
+        background-color: #EBEBF0;
+        color: #646469;
+        border: none;
+        padding: 1.5vw 4.5vw;
+        border-radius: 6px;
+        margin-bottom: 5vw;
+        resize: none; 
+        max-height: 100px;
+    }
+
+    textarea:focus{
+        border: 2px solid #9B9BA0;
+        outline: none;
+    }
+
+    .ct-row{
+        width: 100%;
+        height: 30vw;
+        margin-bottom: 5vw;
+        position: relative;
+    }
+
+    .card-icon{
+        width: 30vw;
+        height: 30vw;
+        border-radius: 12px;
+        background-color: #3C3C46;
+        margin-right: 5vw;
+        position: absolute;
+        left: 0;
+    }
+
+    .icon5{
+        width: 15vw !important;
+        height: 15vw !important;
+        margin: 7.5vw !important;
+    }
+
+    .info{
+        width: 55vw;
+        height: 100%;
+        position: absolute;
+        right: 0;
+    }
+
+    .white-tittle{
+        font-size: 5vw;
+        font-weight: normal;
+        color: #fff;
+        margin: 0;
+    }
+
+    .white-desc{
+        font-size: 5vw;
+        color: #fff;
+        margin: 5px 0 0 0;
+    }
+
+    .info-desc{
+        position: absolute;
+        bottom: 0;
+    }
+
+    .ct-row2{
+        width: 100%;
+        height: 60px;
+    }
+
+    .up{
+        display: block;
+        width: 100%;
+    }
+
+    
+
+    
+}
